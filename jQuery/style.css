@@ -1,0 +1,203 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+   
+   position: relative;
+    height: 400px;
+    width: 500px;
+    border: 5px solid #A2FF86;
+    background-color: #164B60;
+}
+#day{ 
+
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: #A2FF86;
+    opacity: 1;
+    display: flex;
+    transform: translate(-50%, 50%);
+    transition: all 0.3s ease-in-out;
+    
+   
+}
+#day.clicked{
+  
+    opacity: 0.5;
+}
+#time {
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: #A2FF86;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#time.clicked{
+
+    display:none;
+    opacity: 0.5;
+}
+
+
+#startStopBtn{
+  
+    background: #A2FF86;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #164B60;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 5rem;
+    height: 3rem;
+    word-break: break-word;
+    border: 0;
+    transition: height 0.4s ease-in-out;
+
+    
+  
+
+}
+button:hover{ 
+    box-shadow: #A2FF86 0 10px 20px -10px;
+
+}
+
+#resetBtn{
+   display: none;
+    background: #A2FF86;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #164B60;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    word-break: break-word;
+    border: 0;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#resetBtn.clicked{
+    transform: translateX(30px);
+}
+
+#flagBtn.clicked{
+    transform: translateX(-30px);
+}
+#startStopBtn.clicked{
+    height: 5rem;
+}
+
+
+button img {
+    height: 1rem;
+    width: auto;
+}
+
+
+#flagBtn{
+    display: none;
+    background: #A2FF86;
+    border-radius: 999px;
+    box-sizing: border-box;
+    color: #164B60;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    height: fit-content;
+    word-break: break-word;
+    border: 0;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.buttons{
+
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 12rem;
+    height: 3rem;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 50%);    
+
+}
+
+
+
+#timer{
+    font-family: 'Titillium Web', sans-serif; 
+    color :#A2FF86;
+    position:absolute;
+    bottom: 35%;
+    left: 50%;
+    opacity: 0.5;
+    font-size: 30px;
+    transform: translate(-50%, 50%);
+    transition: all 0.3s ease-in-out;
+
+} 
+
+#timer.clicked{
+    bottom: 50%;
+    opacity: 1;
+    font-size: 70px;
+}
+
+#laplist{
+    font-family: 'Titillium Web', sans-serif; 
+    position: absolute;
+    top: 30%;
+    color: #A2FF86;
+    
+}
+ul{
+list-style: none;
+}
+
+
+
+
